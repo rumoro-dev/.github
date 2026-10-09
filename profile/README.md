@@ -50,6 +50,10 @@ rumoro auth:login && rumoro mentions:watch --platform hackernews | jq -r '.post.
 
 Every mention carries a relevance score, a sentiment and intents such as `buy_intent`, `question`, `bug_report`, `complaint` and `praise`.
 
+## The API, in five areas
+
+Keywords (with a health report per keyword) · Mentions (search, triage, CSV and JSON export) · People (the authors behind the mentions, with tags, notes and merges) · Alerts and channels (instant rules and daily or weekly digests to Slack, Telegram, email and signed webhooks) · Analytics (summary, series, breakdown, share of voice). It's all one [OpenAPI document](https://api.rumoro.dev/v1/openapi.json), and the SDKs below are generated from it.
+
 ## Repositories
 
 | Repository | What it is | Install |
@@ -62,6 +66,12 @@ Every mention carries a relevance score, a sentiment and intents such as `buy_in
 | [claude-skills](https://github.com/rumoro-dev/claude-skills) | Setup and triage skills for Claude Code | Copy into `~/.claude/skills` |
 | [openclaw-skill](https://github.com/rumoro-dev/openclaw-skill) | Rumoro skill for OpenClaw agents | `openclaw skills install @markolo10/rumoro` |
 
+Issues are welcome on any of them.
+
+## Latest from the blog
+
+- [Reddit API pricing, limits and access in 2026](https://rumoro.dev/blog/reddit-api)
+
 ## Pricing
 
-Prepaid, with no subscription. $5 per keyword per month plus $0.008 per matched mention. New accounts start with $5.80 of free credit. See [rumoro.dev/pricing](https://rumoro.dev/pricing).
+Prepaid, with no subscription, seats or tiers. $5 per keyword per month plus $0.008 per matched mention. New accounts start with $5.80 of free credit, no card needed. See [rumoro.dev/pricing](https://rumoro.dev/pricing).
