@@ -1,8 +1,8 @@
 # Rumoro
 
-**Social listening for developers and AI agents.** Rumoro follows what people say about your product, your competitors and your market, from Reddit and Hacker News to GitHub issues and YouTube videos. Every post gets a relevance score, a sentiment and intents, and the ones worth your time reach Slack, Telegram, email, a webhook or your AI agent. Your code and your agents work with the same data you see in the dashboard.
+**Social listening for developers and AI agents.** Rumoro follows what people say about your product, your competitors and your market, from Reddit and Hacker News to GitHub issues and YouTube videos. Each post is scored for relevance and sentiment and tagged with intents, and the ones worth your time reach you in Slack, Telegram or email, at a webhook, or through your AI agent. Your code and your agents work with the same data you see in the dashboard.
 
-[rumoro.dev](https://rumoro.dev) · [Docs](https://docs.rumoro.dev) · [MCP](https://docs.rumoro.dev/mcp) · [OpenAPI](https://api.rumoro.dev/v1/openapi.json) · [Dashboard](https://app.rumoro.dev)
+[rumoro.dev](https://rumoro.dev) · [Docs](https://docs.rumoro.dev) · [MCP](https://docs.rumoro.dev/mcp) · [API reference](https://api.rumoro.dev/v1/openapi.json) · [Dashboard](https://app.rumoro.dev)
 
 ## Pick your interface
 
@@ -48,15 +48,15 @@ rumoro auth:login && rumoro mentions:watch --platform hackernews | jq -r '.post.
 | Instagram | Posts and reels | Every 6 hours |
 | App Store | Reviews | Once a day |
 
-Intents include `buy_intent`, `question`, `bug_report`, `complaint` and `praise`.
+The intents include `buy_intent`, `question`, `bug_report`, `complaint` and `praise`, so you can filter for the posts that need an answer.
 
 ## What the API covers
 
-- **Keywords**: what to track, matching rules, groups, and a health report per keyword
-- **Mentions**: search, triage, and CSV or JSON export
-- **People**: the authors behind the mentions, with tags, notes and merging
-- **Alerts and channels**: instant, hourly, daily or weekly delivery to Slack, Telegram, email and signed webhooks
-- **Analytics**: summary, time series, breakdowns and share of voice
+- **Keywords** for what to track, with matching rules, groups and a health report per keyword
+- **Mentions** with search, triage and CSV or JSON export
+- **People**, meaning everyone who wrote a mention, with tags, notes and merging
+- **Alerts and channels** for instant, hourly, daily or weekly delivery to Slack, Telegram, email and signed webhooks
+- **Analytics** with a summary, time series, breakdowns and share of voice
 
 The SDKs are generated from the same [OpenAPI document](https://api.rumoro.dev/v1/openapi.json).
 
@@ -72,7 +72,7 @@ The SDKs are generated from the same [OpenAPI document](https://api.rumoro.dev/v
 | [claude-skills](https://github.com/rumoro-dev/claude-skills) | Claude Code skills for setup and triage | Copy into `~/.claude/skills` |
 | [openclaw-skill](https://github.com/rumoro-dev/openclaw-skill) | OpenClaw skill | `openclaw skills install @markolo10/rumoro` |
 
-Found a bug or missing something? Open an issue in the relevant repository.
+Found a bug or missing something? Open an issue in the repository it belongs to.
 
 ## From the blog
 
@@ -80,4 +80,4 @@ Found a bug or missing something? Open an issue in the relevant repository.
 
 ## Pricing
 
-Pay as you go from a prepaid balance: $5 per keyword per month and $0.008 per matched mention. There are no subscriptions, seats or plans, and new accounts get $5.80 of credit without a card. Details at [rumoro.dev/pricing](https://rumoro.dev/pricing).
+Pay as you go from a prepaid balance. Each keyword costs $5 per month, and each matched mention $0.008. There are no subscriptions, seats or plans, and new accounts get $5.80 of credit without a card. See [rumoro.dev/pricing](https://rumoro.dev/pricing).
