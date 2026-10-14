@@ -50,6 +50,8 @@ rumoro auth:login && rumoro mentions:watch --platform hackernews | jq -r '.post.
 
 The intents include `buy_intent`, `question`, `bug_report`, `complaint` and `praise`, so you can filter for the posts that need an answer.
 
+What an agent can do with each, with example prompts: the [Reddit](https://rumoro.dev/reddit-mcp), [X](https://rumoro.dev/x-mcp), [LinkedIn](https://rumoro.dev/linkedin-mcp) and [YouTube](https://rumoro.dev/youtube-mcp) MCP server pages.
+
 ## What the API covers
 
 - **Keywords** for what to track, with matching rules, groups and a health report per keyword
