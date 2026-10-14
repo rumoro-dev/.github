@@ -46,7 +46,10 @@ rumoro auth:login && rumoro mentions:watch --platform hackernews | jq -r '.post.
 | News | Web articles | Every 15 minutes |
 | TikTok | Videos | Every 3 hours |
 | Instagram | Posts and reels | Every 6 hours |
-| App Store | Reviews | Once a day |
+| App Store | Reviews of your apps | Once a day |
+| Google Play | Reviews of your apps | Once a day |
+| Trustpilot | Reviews of your pages | Once a day |
+| Google reviews | Reviews of your places | Once a day |
 
 The intents include `buy_intent`, `question`, `bug_report`, `complaint` and `praise`, so you can filter for the posts that need an answer.
 
